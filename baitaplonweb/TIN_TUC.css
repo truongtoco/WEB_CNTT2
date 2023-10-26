@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    font-family:'Barlow',sans-serif ;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+body{
+    background-image: linear-gradient(to bottom left,white,rgb(36, 36, 39))
+}
+.header__bodyo-logo-image{
+    height: 90px;
+    width: auto;
+    object-fit: cover;
+}
+.header__body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 75px;
+    overflow: hidden;
+}
+.header__body-search{
+    width: 400px;
+    display: flex;
+}
+.header__body-search-input{
+    width: 100%;
+    line-height: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0 16px;
+    background-color: rgba(128, 128, 128, 0.137);
+}
+.header__body-contact{
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(26, 19, 217);
+    border-radius: 20px;
+    padding: 0 16px;
+}
+.header__body-contact-content span{
+    display: block;
+    margin-left: 7px;
+}
+.header__body-contact-logo-image{
+    height: 50px;
+    width: auto;
+    object-fit: cover;
+}
+.header__body-cart-logo{
+    position: relative;
+}
+.header__body-cart{
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    line-height: 30px;
+    border-radius: 30px;
+    padding: 0 20px;
+}
+.header__body-cart:hover{
+    cursor: pointer;
+}
+.header__body-cart-content:hover{
+    background-color: rgba(216, 62, 62, 0.734);
+    color: white;
+    border-radius: 10px;
+}
+.header__body-account-logo{
+    height: 40px;
+    width: auto;
+    object-fit: cover;
+}
+.header__body-account{
+    display: flex;
+    align-items: center;
+}
+.header__body-account-content span {
+    display: block;
+    margin-left: 7px;
+    padding: 5px;
+}
+.header__body-search-logo{
+    margin-left: 7px;
+    margin-top: 15px;
+    color:rgba(117, 116, 116, 0.773);
+}
+.header__body-search-logo:hover{
+    cursor: pointer;
+    font-size: 30px;
+}
+.header__body-search-input:hover{
+    cursor: pointer;
+}
+.header__body-cart-content{
+    color: rgba(232, 28, 28, 0.927);
+}
+.header__body-cart-quantity{
+    color:white;
+    font-size: 13px;
+    padding: 2px;
+    background-color: rgba(231, 117, 117, 0.721);
+    position: relative;
+    bottom: 13px;
+    right: 5px;
+    border-radius: 100%;
+}
+.header__body-account-content{
+    margin-left: 7px;
+}
+.header__body-account-content-login:hover{
+    cursor: pointer;
+    background-color:rgba(101, 100, 100, 0.895);
+    color: white;
+}
+.header__body-account-content-register:hover{
+    cursor: pointer;
+    background-color:rgba(101, 100, 100, 0.895);
+    color: white;
+}
+.header__bottom{
+    background-color: #333;
+    /* height: 65px; */
+    box-sizing: border-box;
+    
+}
+ .header__bottom ul{
+    text-align: center;
+}
+.header__bottom ul li {
+    display: inline-block;
+    padding: 21px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.header__bottom ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 550;
+    margin-right: 45px; 
+    margin-left: 50px;
+}
+.header__bottom ul li a i{
+    margin-right: 5px;
+    text-align: center;
+}
+
+.header__bottom ul li:hover {
+    background-color: rgb(239, 104, 104);
+    cursor: pointer;
+    
+   
+} 
+/* CSS cơ bản cho menu */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-left: 165px;
+    margin-right: 100px;
+    margin-top: auto;
+}
+.menu-toggle {
+    display: none;  
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 550;
+    padding: 20px;    
+}
+
+
+/* CSS cho menu responsive */
+@media (max-width: 800px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+.part 
+{
+    margin: 20px 60px 10px 30px;
+    padding: 10px 10px 10px 10px;
+    font-family: "Alumni Sans Collegiate One", "Roboto Slab", Manrope;
+    background-color: #333 ;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 175px;
+}
+.content{
+    display: flex;
+    text-align: center;
+    margin-left: 30px;
+}
+.news
+{
+    box-sizing: border-box;
+    width: 30%;
+    text-align: left;
+    margin: 10px 30px 10px 0px;
+    float: left;
+    padding: 5px 5px 5px 5px;
+}
+
+.news img 
+{
+    width: 100%;
+    height: 200px;
+}
+.news a 
+{
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    font-style: italic;
+}
+.news:hover{
+/*    background-color: red;*/  
+    transform: translateY(-15px);
+    box-shadow: 10px 10px 5px black;
+}
+.news a:hover
+{
+    color: blue;
+}
+/*footer*/
+.container__content-footer{
+    padding-top: 12px;
+    background-color:rgba(18, 17, 17, 0.907);
+    margin-top: 50px;
+}
+.footer__content{
+    width: 1300px;
+    margin: 0 auto;
+}
+.footer__content-top{
+    display: flex;
+    width: 100%;
+}
+.footer__content-topleft{
+    flex: 25%;
+
+}
+.footer__content-topleft div{
+    color: #ffffffd3;
+    font-size: 14px;
+    padding-right: 48px;
+    padding-bottom: 6px;
+    line-height: 1.5;
+    font-weight: 250;
+}
+.footer__content-topleft-logotop{
+    height: 60px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.footer__content-topleft-logobottom{
+    height: 60px;
+    width: auto;
+    object-fit: cover;
+}
+.footer__content-topright1{
+    flex: 25%;
+}
+.footer__content-topright-title{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #767575;
+}
+.footer__content-topright1 a{
+    display: block;
+    font-weight: 250;
+    color: #ffffffd3;
+    font-size: 14px;
+    padding-right: 48px;
+    padding-bottom: 6px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.logo-contact{
+    display: flex;
+    align-items: center;
+}
+.logo-contact a{
+    padding: 0;
+    margin-right: 7px;
+}
+.facebookkk{
+    color: white;
+    background-color: rgb(97, 97, 245);
+    border-radius: 100%;
+    font-size: 30px;
+    padding: 0;
+}
+.youtubeee{
+    color: white;
+    border-radius: 100%;
+    font-size: 30px;
+    padding: 0;
+}
+.instagrammm{
+    color: white;
+    border-radius: 100%;
+    font-size: 30px;
+    padding: 0;
+}
+.specical{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+    color: #767575;   
+}
+.footer__content-topright1 a:hover{
+    cursor: pointer;
+    color: rgb(203, 10, 10);
+}
